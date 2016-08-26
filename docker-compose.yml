@@ -1,0 +1,16 @@
+version: '2'
+services:
+  keystone:
+    image: jmvrbanac/simple-keystone:latest
+    ports:
+      - 5000:5000
+      - 35357:35357
+  barbican:
+    image: jmvrbanac/simple-barbican:latest
+    ports:
+      - 9311:9311
+      - 9312:9312
+    links:
+      - keystone
+    volumes:
+      - ./etc/barbican:/etc/barbican
