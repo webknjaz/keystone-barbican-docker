@@ -1,7 +1,9 @@
 export OS_AUTH_URL=http://localhost:5000
-export OS_PASSWORD=password
-export OS_USERNAME=admin
+#export OS_PASSWORD=password
+#export OS_USERNAME=admin
 export OS_PROJECT_NAME=admin
 export OS_USER_DOMAIN_ID=default
 export OS_PROJECT_DOMAIN_ID=default
 export OS_IDENTITY_API_VERSION=3
+export OS_TOKEN=ADMIN_TOKEN
+export OS_URL=http://localhost:35357/v3
